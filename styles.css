@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Styles ------------------------------------------------ */
+
+
+:root {
+    --font-color: white;
+    --background-color: rgb(34, 34, 34);
+    --background-color-gradient: rgb(87, 87, 87);
+    --background-highlight: rgb(78, 78, 78);
+    --bottom-border-color: rgba(255, 255, 255, 0.2);
+    --primary-border-color: rgba(255, 255, 255, 0.3);
+    --saved-color: rgb(3, 231, 3);
+    --button-hover-color: rgb(175, 175, 175);
+    --button-border-color: rgb(134, 134, 134);
+}
+
+html {
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+button:hover {
+    /* background-color: var(--button-hover-color); */
+    background: radial-gradient(var(--background-color-gradient), var(--background-color));
+    color: var(--font-color);
+    border: 1px solid var(--button-border-color);
+    /* border: 1px solid var(--background-color); */
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+input {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 5rem;
+}
+
+.long-rest-button {
+    font-size: 1.5rem;
+}
+
+.save-status {
+    display: flex;
+    color: var(--saved-color);
+    margin-left: 2rem;
+    visibility: hidden;
+}
+
+/* .save-button-container {
+    display: block;
+    height: 100%;
+    border: 1px solid white;
+} */
+
+.save-button {
+    font-size: 1rem;
+    border-radius: 2rem;
+    height: 50px;
+}
+
+.load-button {
+    font-size: 1rem;
+    border-radius: 2rem;
+    height: 50px;
+}
+
+.reset-button {
+    font-size: 1rem;
+    border-radius: 2rem;
+    height: 50px;
+}
+
+.content-container {
+    margin: 1rem 1rem 0 1rem;
+    /* border: 1px solid white; */
+}
+
+.all-spells-container {
+    width: 100%;
+}
+
+.spell-point-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 1rem 0;
+    border-bottom: 1px solid var(--bottom-border-color);
+    justify-content: space-between;
+}
+
+.current-max-spell-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.current-spell-points, .max-spell-points {
+    border: 1px solid var(--primary-border-color);
+}
+
+.spell-level-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    /* width: 50%; */
+
+    /* border: 1px solid white; */
+}
+
+.tier-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bottom-border-color);
+
+}
+
+.single-spell-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 75%;
+    border-bottom: 1px solid var(--bottom-border-color);
+    margin-left: 1rem;
+    align-items: baseline;
+}
+
+.cast-spell-name-container {
+    display: flex;
+}
+
+.spell-name {
+    border: 1px solid var(--primary-border-color);
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.cost-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-self: flex-end;
+}
+
+.sp-cost {
+    border: 1px solid var(--primary-border-color);
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    align-items: baseline;
+    font-size: 1.25rem;
+}
+
+.remove-spell-button {
+    margin-left: 1rem;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Point Tracker</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+
+    <div class="content-container">
+
+        <header>
+            <h1>Spell Tracker</h1>
+            <button class="long-rest-button" onclick="longRest()">Long Rest</button>
+            <p class="save-status">All changes saved</p>
+            <!-- <div class="save-button-container"> -->
+            <button class="reset-button" onclick="reset()">Reset</button>
+            <button class="save-button" onclick="save()">Save</button>
+            <button class="load-button" onclick="load()">Load</button>
+            <!-- </div> -->
+        </header>
+
+        <div class="all-spells-container">
+            <h2>Spells</h2>
+
+
+            <!-- Spell Points -->
+
+
+            <div class="spell-point-container">
+                <h3>Spell Points</h3>
+                <div class="current-max-spell-points">
+                    <input class="current-spell-points" type="number">
+                    <h3>&nbsp;/&nbsp;</h3>
+                    <input class="max-spell-points" type="number">
+                </div>
+            </div>
+
+
+            <!-- Spell Levels -->
+
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>1st</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>2nd</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+
+
+                <!-- <div class="single-spell-container">
+                    <div class="cast-spell-name-container">
+                        <button class="cast-button">
+                            Cast
+                        </button>
+                        <p class="spell-name" contenteditable="true">Detect Thoughts</p>
+                    </div>
+                    <div class="cost-button-container">
+                        <p>Cost:&nbsp;</p>
+                        <p class="sp-cost" contenteditable="true">2</p>
+                        <button class="remove-spell-button">
+                            -
+                        </button>
+                    </div>
+                </div>
+
+                <div class="single-spell-container">
+                    <div class="cast-spell-name-container">
+                        <button class="cast-button">
+                            Cast
+                        </button>
+                        <p class="spell-name" contenteditable="true">Suggestion</p>
+                    </div>
+                    <div class="cost-button-container">
+                        <p>Cost:&nbsp;</p>
+                        <p class="sp-cost" contenteditable="true">2</p>
+                        <button class="remove-spell-button">
+                            -
+                        </button>
+                    </div>
+                </div>
+
+                <div class="single-spell-container">
+                    <div class="cast-spell-name-container">
+                        <button class="cast-button">
+                            Cast
+                        </button>
+                        <p class="spell-name" contenteditable="true">Vortex Warp</p>
+                    </div>
+                    <div class="cost-button-container">
+                        <p>Cost:&nbsp;</p>
+                        <p class="sp-cost" contenteditable="true">3</p>
+                        <button class="remove-spell-button">
+                            -
+                        </button>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>3rd</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>4th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>5th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>6th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>7th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>8th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+            <div class="spell-level-container">
+                <div class="tier-title-container">
+                    <h3>9th</h3>
+                    <button class="add-spell-button">+</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
